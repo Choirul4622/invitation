@@ -58,7 +58,7 @@
               <small class="mt-3">Sabtu, 12 Oktober 2024</small>
               <hr class="border-secondary w-50 mx-auto" />
               <p class="mb-1">Kepada Bapak/Ibu/Saudara/i</p>
-              <p class="mb-2 mt-2"><span class="fw-semibold h4" id="nama"></span></p>
+              <p class="mb-2 mt-2"><span class="fw-semibold h4" id="namaTamu"></span></p>
               <p class="mb-2">di Tempat</p>
               <button type="button" class="btn bg-berem btn-outline-secondary text-white rounded-4"
                 data-bs-dismiss="modal" onclick="playAudio()">
@@ -588,13 +588,14 @@
   </script>
   
    <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const nama = urlParams.get('n') || '';
-    const namaContainer = document.querySelector('.modal modal-dialog modal-content modal-body row flex mb-2 fw-semibold');
-    namaContainer.innerText = `${nama},`.replace($);
+  const urlParams = new URLSearchParams(window.location.search);
+  const namaTamu = urlParams.get('nama');
 
-    document.querySelector('#nama').value = nama;
-  </script>
+  document.getElementById('namaTamu').textContent = `${namaTamu}!`;
+</script>
+
+<h1 id="namaTamu"></h1>
+
   
 </body>
 
