@@ -462,8 +462,7 @@
                 <textarea name="ucapan" placeholder="Ucapan" rows="4" class="form-control" required></textarea>
               </div>
               <div class="mb-3">
-                <select name="konfirmasi" class="form-select" required>
-                  <option disabled selected>Konfirmasi Kehadiran</option>
+                <select name="konfirmasi" class="form-select" placeholder="Konfirmasi Kehadiran" required>
                   <option value="Hadir">Hadir</option>
                   <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
@@ -593,17 +592,6 @@
 
   document.getElementById('namaTamu').textContent = `${namaTamu}`;
 
-</script>
-
-<script>
-  const submit = document.getElementById('submit');
-
-  submit.addEventListener('click', () => {
-    // Kode untuk mengirim data atau melakukan aksi lainnya
-
-    // Nonaktifkan tombol setelah diklik
-    submit.disabled = true;
-  });
 </script>
 
   
